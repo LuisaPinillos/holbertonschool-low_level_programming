@@ -1,16 +1,22 @@
 #include "holberton.h"
 
 /**
- * swap_int - omputes the absolute value of an integ
- *
+ * _strlen - returns the length of a string
+ *@s: string
  * Return: 0
  */
 
-void swap_int(int *a, int *b)
+int _strlen(char *s)
 {
-	int p;
-	p = *a;
-	*a = *b;
-	*b = p;
-	
+	int len;
+	int i;
+
+	len = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		len++;
+	}
+
+	return (len);
 }
