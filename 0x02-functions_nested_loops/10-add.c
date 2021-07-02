@@ -2,8 +2,8 @@
 
 /**
  * add - omputes the absolute value of an integer
- *@n: number
- *@b: number
+ *@n: integer
+ *@b: integer
  * Return: nothing
  */
 
