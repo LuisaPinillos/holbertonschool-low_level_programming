@@ -17,34 +17,23 @@ void times_table(void)
 		{
 			mul = f * n;
 
-			if (n != 9)
+			if (n <= 0)
 			{
-			     if (mul > 9)
-			     {
-				     _putchar((mul / 10) + '0');
-				     _putchar((mul % 10) + '0');
-				     _putchar(',');
-				     _putchar(' ');
-			     }
-			     else
-			     {
-				     _putchar(mul + '0');
-				     _putchar(',');
-				     _putchar(' ');
-				     _putchar(' ');
-			     }
+				_putchar(mul + 48);
 			}
-			else
+			else if (mul <= 9)
 			{
-				if (mul > 9)
-				{
-					_putchar((mul / 10) + '0');
-					_putchar((mul % 10) + '0');
-				}
-				else
-				{
-					_putchar(mul + '0');
-				}
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(mul + 48);
+			}
+			else if (mul > 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(mul / 10 + 48);
+				_putchar(mul % 10 + 48);
 			}
 		}
 		_putchar('\n');
