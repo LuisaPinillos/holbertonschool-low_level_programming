@@ -4,7 +4,7 @@
  * add - omputes the absolute value of an integer
  *@n: integer
  *@b: integer
- * Return: nothing
+ * Return: Always 0
  */
 
 int add(int b, int n)
