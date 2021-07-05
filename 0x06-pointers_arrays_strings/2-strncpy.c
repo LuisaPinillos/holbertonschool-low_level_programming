@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * *_strncpy - concatenates two strings
+ * *_strncpy - copy a string
  *@dest: array
  *@src: positions
  *@n: number
@@ -10,15 +10,22 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
+	int i, j;
 
 	for (i = 0; src[i] != '\0'; i++)
 	{
-		if (i < n)
+	}
+	for (j = 0; j < n; j++)
+	{
+		if (j < i)
 		{
-			dest[i] = src[i];
+			dest[j] = src[j];
+		}
+		else
+		{
+			dest[j] = '\0';
 		}
 	}
-	dest[i] = '\0';
 	return (dest);
 }
+
