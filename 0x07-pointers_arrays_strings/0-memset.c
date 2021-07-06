@@ -2,9 +2,10 @@
 
 /**
  * *_memset - fills memory with a constant byte
- *@s: pointer
- *@b: constant
- *return: s
+ * @s: pointer
+ * @b: constant
+ * @n: limit
+ * Return: s
  */
 
 char *_memset(char *s, char b, unsigned int n)
