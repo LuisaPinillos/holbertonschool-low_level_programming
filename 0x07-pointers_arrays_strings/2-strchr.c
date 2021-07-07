@@ -9,8 +9,7 @@
 
 char *_strchr(char *s, char c)
 {
-	int i = 0;
-	int m = 0;
+	int i, m;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -22,10 +21,6 @@ char *_strchr(char *s, char c)
 		{
 			return (s + m);
 		}
-		else
-		{
-			return (0);
-		}
 	}
-	return (s[m]);
+	return (0);
 }
