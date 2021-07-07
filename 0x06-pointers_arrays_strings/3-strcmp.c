@@ -4,27 +4,28 @@
  * *_strncpy - copy a string
  *@s1: string one
  *@s2: string two
- * Return: dest
+ * Return: diff
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	int i, j, diff; 
+	int i, j;
+	int diff = 0;
 
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		for (j = 0; s2[j] != '\0'; j++)
 		{
-			diff = s1[i] - s2[j];
-			if (diff >= 0)
+			if (s1[i] == s2[j])
 			{
-				i++;
+				return (0);
 			}
 			else
 			{
-				i++;
+				diff = s1[i] - s2[j];
+				return (diff);
 			}
 		}
 	}
-	return (diff);
+	return (0);
 }
