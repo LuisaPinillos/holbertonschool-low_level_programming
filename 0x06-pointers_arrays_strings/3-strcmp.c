@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * *_strncpy - copy a string
+ * *_strcmp - function that compares two strings.
  *@s1: string one
  *@s2: string two
  * Return: diff
