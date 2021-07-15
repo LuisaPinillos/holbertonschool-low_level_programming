@@ -15,7 +15,7 @@ char *str_concat(char *s1, char *s2)
 	int suma1 = 0, suma2 = 0;
 	char *s;
 
-	if (s1 == 0 && s2 == 0)
+	if (s1 == NULL && s2 == NULL)
 	{
 		return (NULL);
 	}
