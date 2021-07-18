@@ -2,8 +2,8 @@
 
 /**
  *string_nconcat - concatenates two strings.
- *@s1: first string
- *@s2: second string
+ *@s1: first pointer character
+ *@s2: second pointer character
  *@n: size character s2 parameter
  *Return: concat pointer
  */
