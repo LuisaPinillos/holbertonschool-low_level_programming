@@ -1,0 +1,1 @@
+Ptoject about structures and typedef
