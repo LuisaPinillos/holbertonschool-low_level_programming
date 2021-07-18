@@ -7,15 +7,16 @@
  * Return: Always 98
  */
 
-void *malloc_checked(unsigned int b)	
+void *malloc_checked(unsigned int b)
 {
-	if (b == 0)	
+	if (b == 0)
 	{
-		return (NULL);	
+		return (NULL);
 	}
-	else	
+	else
 	{
-		void *memory_allocate = NULL;	
+		void *memory_allocate = NULL;
+
 		memory_allocate = (void *)malloc(b);
 
 		if (memory_allocate == NULL)
