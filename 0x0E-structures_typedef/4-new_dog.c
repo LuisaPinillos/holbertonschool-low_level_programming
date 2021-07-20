@@ -32,8 +32,8 @@ void _fill(char *dest, char *src)
 
 	while (src[i] != '\0')
 	{
-		i++;
 		dest[i] = src[i];
+		i++;
 	}
 	dest[i] = '\0';
 }
@@ -43,31 +43,31 @@ void _fill(char *dest, char *src)
  * @name: Name dog
  * @age: Age dog
  * @owner: Owner
- * Return: ptr
+ * Return: ptrdog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
 
-	dog_t *ptrdog;
+	dog_t *ptrdog = NULL;
 
 	ptrdog = malloc(sizeof(dog_t));
 
-	if (ptrdog == NULL)
+	if (!ptrdog)
 	{
 		return (NULL);
 	}
 
 	ptrdog->name = malloc(sizeof(char) * (_strlen(name) + 1));
 
-	if (ptrdog->name == NULL)
+	if (!ptrdog->name)
 	{
 		free(ptrdog);
 		return (NULL);
 	}
 	ptrdog->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 
-	if (ptrdog->owner == NULL)
+	if (!ptrdog->owner)
 	{
 		free(ptrdog->name);
 		free(ptrdog);
