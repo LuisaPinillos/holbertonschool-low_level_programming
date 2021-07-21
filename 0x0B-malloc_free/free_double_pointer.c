@@ -5,7 +5,7 @@
 /**
  * free_double_pointer - Function for free pointers 
  * @ptr: double pointer
- * size: size
+ * @size: size
  * Return: Nothing
  */
 
