@@ -1,0 +1,1 @@
+This project is about how to use the pointers function and practice. The last point is make a calculator 
