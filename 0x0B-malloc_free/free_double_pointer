@@ -1,3 +1,7 @@
+#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * free_double_pointer - Function for free pointers 
  * @ptr: double pointer
