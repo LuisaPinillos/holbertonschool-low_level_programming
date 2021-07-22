@@ -15,7 +15,6 @@ typedef struct op
 {
 	char *op;
 	int (*f)(int Number1, int Number2);
-	
 } op_t;
 
 /* Prototipos */
