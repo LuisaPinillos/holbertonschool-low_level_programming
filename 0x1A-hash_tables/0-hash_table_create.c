@@ -10,7 +10,7 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *newhasht = NULL;
-	unsigned long int a;
+	unsigned int a;
 
 	if (size < 1)
 	{
