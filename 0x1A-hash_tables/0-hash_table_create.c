@@ -7,15 +7,34 @@
  * Return: new hash table.
  */
 
-hash_table_t *hash_table_create(unsigned long int size);
+hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *new_hasht = NULL;
+	hash_table_t *newhasht = NULL;
+	unsigned long int a;
 
-	new_hasht = malloc(sizeof(size))
-
-	if (new_hasht == NULL)
+	if (size < 1)
 	{
 		return (NULL);
 	}
-	return (new_hasht);
+
+	newhasht = malloc(sizeof(hash_table_t));
+
+	if (newhasht == NULL)
+	{
+		return (NULL);
+	}
+
+	newhasht->size = size;
+	newhasht->array = malloc(sizeof(hash_table_t *) * size);
+	if (newhasht->array == NULL)
+	{
+		return (NULL);
+	}
+
+	for (a = 0; a < size; a++)
+	{
+		newhasht->array[1] = NULL;
+	}
+
+	return (newhasht);
 }
