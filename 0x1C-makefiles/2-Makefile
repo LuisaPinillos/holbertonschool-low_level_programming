@@ -7,5 +7,5 @@ NAME = school
 all : $(OBJS)
 	$(CC) $(OBJS) -o $(NAME)
 
-main.o : main.c m.h
-school.o : school.c m.h
+%.o : %.c
+	$(CC) -c $(CPPFLAGS) $< -o $@
