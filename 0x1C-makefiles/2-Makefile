@@ -1,11 +1,8 @@
 #Create the first useful Makefile.
 CC = gcc
 SRC = main.c school.c
-OBJS = $(SRC:.c=.o)
+OBJ = $(SRC:.c=.o)
 NAME = school
 
-all : $(OBJS)
-	$(CC) $(OBJS) -o $(NAME)
-
-%.o : %.c
-	$(CC) -c $(CPPFLAGS) $< -o $@
+all : $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
