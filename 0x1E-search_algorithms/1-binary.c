@@ -16,10 +16,10 @@ void printarray(int *array, size_t size)
 	printf("Searching in array:");
 	for (i = 0; i < size; i++)
 	{
-		printf("%d", array[i]);
-		if (i == (size - 1))
+		printf(" %d", array[i]);
+		if (i != (size - 1))
 		{
-			printf(" ,");
+			printf(", ");
 		}
 	}
 	printf("\n");
@@ -33,7 +33,7 @@ void printarray(int *array, size_t size)
  * Return: Return index of value or -1 if not found
  */
 
-int jump_search(int *array, size_t size, int value)
+int binary_search(int *array, size_t size, int value)
 {
 	size_t low;
 	size_t hight;
