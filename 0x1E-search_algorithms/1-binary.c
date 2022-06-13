@@ -26,7 +26,7 @@ void printarray(int *array, size_t size)
 }
 
 /**
- * jump_search - Function that searches for a value in a sorted array.
+ * binary_search - Function that searches for a value in a sorted array.
  * @array: Pointer to array to be searched
  * @size: Size of array to be search of type size_t
  * @value: value to be search inside array
